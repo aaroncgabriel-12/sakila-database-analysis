@@ -1,0 +1,7 @@
+
+# Supported ranges for the prepared notebook; not an execution lockfile.
+pandas>=2.2,<3
+SQLAlchemy>=2.0,<2.1
+PyMySQL[rsa]>=1.1,<2
+matplotlib>=3.8,<4
+jupyterlab>=4,<5
