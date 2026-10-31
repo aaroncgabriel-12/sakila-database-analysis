@@ -8,6 +8,11 @@ behind rentals, inspect film inventory, and turn SQL results into a clear chart.
 Developed for **ADS 507 Practical Data Engineering, Modules 3 and 4**, at the
 University of San Diego.
 
+The practical question is whether catalog and physical inventory cover the same
+titles. The saved analysis identifies **42 of 1,000 films with no inventory
+records**, illustrating how relational queries can surface catalog coverage gaps
+for investigation. It does not measure revenue gains or recommend purchases.
+
 ## What this project demonstrates
 
 - Mapping a rental workflow across related tables and foreign keys.
@@ -101,6 +106,22 @@ with [pandas `read_sql_query`](https://pandas.pydata.org/docs/reference/api/pand
 Dependency ranges are supplied for setup; a fresh environment and live MySQL run
 have not been validated during this preparation.
 
+For repeatable static checks, which need only Python's standard library:
+
+```sh
+python3 scripts/validate_package.py
+```
+
+## Limitations and next steps
+
+- Saved tables and the chart document the original coursework run; the revised
+  connection code still needs a fresh environment and live MySQL check.
+- Inventory presence does not measure current availability, demand, or profitability.
+- Next, validate the setup against a disposable Sakila installation and record
+  the database and dependency versions used.
+- A later extension could examine rental demand alongside inventory coverage.
+  That analysis is not implemented here.
+
 ## Scope and attribution
 
 Module 3 documented the rental business scenario and schema relationships.
@@ -116,5 +137,7 @@ visualization, rather than authorship of the underlying database. See the
 and licensing. Original course PDFs and worksheets are excluded from this package.
 
 OpenAI Codex assisted with portfolio packaging, credential removal, connection
-refactoring, documentation, and static validation. No open-source license for
-Aaron's work has been selected as part of this review package.
+refactoring, documentation, and static validation, including this documentation
+update. This disclosure does not substitute for Aaron's own confirmation that
+he has reviewed and understands the final code. No open-source license for
+Aaron's work has been selected.
