@@ -1,6 +1,7 @@
 # Validation and provenance
 
-This is a local portfolio review package. It has not been published or pushed.
+This is the published portfolio repository. The preparation checks below describe
+the original review package; publication does not imply a new database run.
 
 ## Sources and preserved evidence
 
@@ -68,8 +69,7 @@ There is no formal JSON-schema or MySQL-parser validation in the standard-librar
 checker, and pattern-based secret scans cannot guarantee detection of every
 possible secret. A later run must be reviewed before sharing new outputs.
 
-Before publication, Aaron should review project wording and decide whether to
-add a license for his work. The original password remains in the untouched local
+Aaron can review project wording and decide whether to add a license for his work. The original password remains in the untouched local
 coursework; if it is still in use, rotate it separately. Oracle's sample schema
 and records retain their own attribution and licensing. No database data is
 redistributed in this package.
